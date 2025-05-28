@@ -1,6 +1,6 @@
 let elListRendr = document.querySelector(".services-grid")
 let elList = document.querySelector(".experts-container")
-
+let elBtnOpen=document.querySelector(".headerr__burger__btn"),elNavbar=document.querySelector(".headerr__navbar")
 function renderList(array, list) {
 
     list.innerHTML = ""
@@ -44,5 +44,8 @@ function listMutax(array, list) {
 }
 
 listMutax(mutaxasis, elList)
+
+
+elBtnOpen.addEventListener("click", () => { elNavbar.classList.toggle("navbar--open") })
 
 

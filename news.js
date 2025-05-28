@@ -1,4 +1,5 @@
 let elList = document.querySelector(".news__list")
+let elBtnOpen=document.querySelector(".headerr__burger__btn"),elNavbar=document.querySelector(".headerr__navbar")
 
 
 function renderList(array, list) {
@@ -29,3 +30,5 @@ function renderList(array, list) {
 }
 
 renderList(blog, elList)
+
+elBtnOpen.addEventListener("click",()=>{elNavbar.classList.toggle("navbar--open")})

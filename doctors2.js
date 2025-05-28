@@ -1,4 +1,5 @@
 let elList = document.querySelector(".services-grid")
+let elBtnOpen=document.querySelector(".headerr__burger__btn"),elNavbar=document.querySelector(".headerr__navbar")
 
 function renderList(array, list) {
     list.innerHTML = ""
@@ -17,3 +18,7 @@ function renderList(array, list) {
 }
 
 renderList(mutaxasis, elList)
+
+
+
+elBtnOpen.addEventListener("click",()=>{elNavbar.classList.toggle("navbar--open")})

@@ -2,6 +2,7 @@ let search = new URLSearchParams(window.location.search).get("id")
 let elImg = document.querySelector(".plastic__img")
 let elList = document.querySelector(".experts-container")
 let elTitle = document.querySelector(".plastic__title")
+let elBtnOpen=document.querySelector(".headerr__burger__btn"),elNavbar=document.querySelector(".headerr__navbar")
 
 let newFindItem = servis.find((el) => {
     return el.id == search
@@ -42,3 +43,6 @@ renderListMutaxasis(mutaxasis, elList)
 
 
 // console.log(elImg.src = newFindItem.image);
+
+
+elBtnOpen.addEventListener("click",()=>{elNavbar.classList.toggle("navbar--open")})
