@@ -1,6 +1,7 @@
 let elListRendr = document.querySelector(".services-grid")
 let elList = document.querySelector(".experts-container")
 let elBtnOpen=document.querySelector(".headerr__burger__btn"),elNavbar=document.querySelector(".headerr__navbar")
+elFioInp = document.querySelector(".cite-foot-opinion__fio"), elTelInp = document.querySelector(".cite-foot-opinion__tel"), elLetterInp = document.querySelector(".cite-foot-opinion__letter"), elSendBtn = document.querySelector(".cite-foot-opinoin__send")
 function renderList(array, list) {
 
     list.innerHTML = ""
@@ -48,4 +49,6 @@ listMutax(mutaxasis, elList)
 
 elBtnOpen.addEventListener("click", () => { elNavbar.classList.toggle("navbar--open") })
 
+
+elSendBtn.addEventListener("click", () => { alert("F.I.O.: " + elFioInp.value + " Telefon raqamingiz: " + elTelInp.value + " Xabaringiz: " + elLetterInp.value) })
 
