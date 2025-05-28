@@ -24,8 +24,8 @@ function renderListMutaxasis(array, list) {
 
     array.forEach((el) => {
         list.innerHTML += `
-    <a class="expert-card" href="./nurse2.html?id=${el.id}">
-    <div ">
+    <a class="experts-card" href="./nurse.html?id=${el.id}">
+   
                         <img src="${el.image}" alt="${el.description}" />
                         <h3 class="expert__title">${el.name}</h3>
                         <p>${el.description}</p>
