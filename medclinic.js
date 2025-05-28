@@ -60,7 +60,7 @@ const servis = [
         title: "Kosmetologiya",
         description:
             "Yuzni tozalash, yoshartirish, parvarishlash va boshqa zamonaviy kosmetologik xizmatlar siz uchun mavjud.",
-        image: "./images/ser-4.png",
+        image: "./images/kosm.png",
     },
     {
         id: 10,
